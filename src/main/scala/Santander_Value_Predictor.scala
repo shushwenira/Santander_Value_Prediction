@@ -24,7 +24,7 @@ object Santander_Value_Predictor {
     if (args.length != 4) {
       println("I/p and O/p filepath needed")
     }
-    Logger.getLogger("finalProject").setLevel(Level.OFF)
+    Logger.getLogger("SVP").setLevel(Level.OFF)
     spark.sparkContext.setLogLevel("ERROR")
     val sc = spark.sparkContext
     import spark.implicits._
